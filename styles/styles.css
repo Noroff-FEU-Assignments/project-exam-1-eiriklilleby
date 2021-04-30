@@ -62,7 +62,7 @@ h2 {
 }
 
 .menu-link {
-  padding: 0rem 4rem;
+  margin: 0rem 4rem;
   font-size: 2rem;
   position: relative;
 }
@@ -74,16 +74,17 @@ h2 {
 .menu-link a::before {
   content: "";
   display: block;
-  height: 0.5rem;
+  height: 0.4rem;
   background-color: var(--darkgray-text);
   position: absolute;
   width: 0%;
   top: 35px;
-  transition: all ease-in-out 250ms;
+  transition: all ease-in-out 0.25s;
 }
 
 .menu-link a:hover::before {
-  width: 40%;
+  width: 100%;
+  margin-right: 1rem;
 }
 .social-container {
   padding: 2.5rem 0rem;
