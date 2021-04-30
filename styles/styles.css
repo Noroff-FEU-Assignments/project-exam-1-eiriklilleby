@@ -37,6 +37,13 @@ h2 {
 
 /* Navbar */
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+  position: relative;
+}
+
 .nav-container {
   display: flex;
   flex-wrap: wrap;
@@ -96,11 +103,29 @@ h2 {
   font-size: 2.4rem;
   padding: 0rem 1.5rem;
   color: var(--darkgray-text);
+  transition: 0.2s;
+}
+
+.social-container i:hover {
+  color: #4267b2;
 }
 
 .target {
   font-weight: 600;
 }
+
+.hamburger-label {
+  font-size: 2.4rem;
+  float: right;
+  padding: 2.5rem;
+  display: none;
+}
+
+#hamburger-menu {
+  float: right;
+  display: none;
+}
+
 /* Search bar with hover styles */
 
 .search-container {
@@ -168,14 +193,72 @@ h2 {
   color: white;
 }
 
-.banner-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .smalltxt {
   font-size: 4.2rem;
   font-weight: 500;
   letter-spacing: 0.1rem;
+}
+
+/* MEDIA QUIRIES */
+
+/* NAV */
+
+@media screen and (max-width: 1523px) {
+  .nav {
+    min-height: 60vh;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+  }
+
+  h1 {
+    margin-left: 0rem;
+  }
+
+  .social-container {
+    margin: auto;
+  }
+
+  .search-container {
+    top: 90%;
+    left: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-link {
+    margin: 2rem 0rem;
+  }
+
+  .text-search {
+    width: 18rem;
+  }
+  .search-container:hover > .text-search {
+    padding: 0 0rem;
+  }
+
+  .hamburger-label {
+    display: block;
+  }
+
+  .nav,
+  #hamburger-menu {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+    transition: ease-in-out 0.4s;
+  }
 }
