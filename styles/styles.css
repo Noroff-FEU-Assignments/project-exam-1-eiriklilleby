@@ -30,9 +30,11 @@ h1 {
 }
 
 h2 {
+  margin-top: 10rem;
   font-size: 6.4rem;
   letter-spacing: 0.2rem;
   font-weight: 600;
+  text-align: center;
 }
 
 /* Navbar */
@@ -189,14 +191,9 @@ header {
   background-image: url(/img/mainbanner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -50rem;
+  background-position-y: -40rem;
+  background-position: center;
   color: white;
-}
-
-.smalltxt {
-  font-size: 4.2rem;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
 }
 
 /* MEDIA QUIRIES */
@@ -260,5 +257,11 @@ header {
   #hamburger-menu:checked ~ nav {
     display: block;
     transition: ease-in-out 0.4s;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  h2 {
+    font-size: 3.2rem;
   }
 }
