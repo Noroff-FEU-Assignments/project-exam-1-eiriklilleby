@@ -231,6 +231,7 @@ header {
 
 main {
   min-height: 70vh;
+  position: relative;
 }
 
 .recent {
@@ -248,18 +249,27 @@ hr {
   height: 0.2rem;
 }
 
+.container {
+  background: red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .carousel-container {
   width: 80%;
   height: 50rem;
   margin: 4rem auto;
   display: flex;
   position: relative;
+  background: black;
+  overflow: hidden;
 }
 
 .img-container {
   height: 35rem;
   width: 55rem;
-  position: relative;
   margin: 3rem 1rem;
 }
 
@@ -267,7 +277,6 @@ hr {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  z-index: 1;
 }
 
 .info-container {
@@ -276,9 +285,8 @@ hr {
   height: 4rem;
   width: 35rem;
   z-index: 5;
-  position: absolute;
   bottom: -20px;
-  left: 13.5%;
+  left: 5.5%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -300,20 +308,24 @@ info p {
   padding-right: 0.4rem;
 }
 
-.prev-btn {
+#prev-btn {
   font-size: 4rem;
   position: absolute;
-  top: 35%;
-  left: -50px;
+  top: 45%;
+  left: 100px;
   color: var(--darkgray-text);
+  background: none;
+  border: none;
 }
 
-.next-btn {
+#next-btn {
   font-size: 4rem;
   position: absolute;
-  right: -50px;
-  top: 35%;
+  right: 100px;
+  top: 45%;
   color: var(--darkgray-text);
+  background: none;
+  border: none;
 }
 
 /* Footer */
