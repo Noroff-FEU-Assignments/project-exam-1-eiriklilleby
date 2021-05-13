@@ -61,6 +61,7 @@ prevBtn.addEventListener("click", () => {
 
 nextBtn.addEventListener("click", () => {
   offset += 3;
+
   makeApiCall();
 });
 
