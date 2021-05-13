@@ -502,6 +502,12 @@ footer {
 
 /* BANNER */
 
+@media screen and (max-width: 1300px) {
+  .banner-container {
+    background-position: center;
+  }
+}
+
 /* Footer */
 
 @media screen and (max-width: 750px) {
