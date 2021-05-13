@@ -220,11 +220,10 @@ header {
   background-image: url(/img/mainbanner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: -32rem;
 
+  background-position: bottom;
   background-attachment: fixed;
-  color: white;
+  color: var(--footer);
 }
 
 /* Recent post */
@@ -501,12 +500,6 @@ footer {
 }
 
 /* BANNER */
-
-@media screen and (max-width: 1400px) {
-  .banner-container {
-    background-position: center;
-  }
-}
 
 /* Footer */
 
