@@ -29,18 +29,10 @@ h1 {
 }
 
 h2 {
-  margin-top: 10rem;
-  font-size: 6.4rem;
-  letter-spacing: 0.2rem;
+  font-size: 2.4rem;
+  letter-spacing: 0.1rem;
   font-weight: 600;
-  text-align: center;
-}
-
-h3 {
-  font-size: 3.2rem;
   color: var(--darkgray-text);
-  font-weight: 500;
-  letter-spacing: 0.5px;
 }
 
 /* Navbar */
@@ -265,4 +257,100 @@ main {
   #hamburger-menu:checked ~ nav {
     display: block;
   }
+}
+
+/* Blog page */
+
+.container {
+  display: flex;
+  width: 70%;
+  margin: 6rem auto;
+  justify-content: space-around;
+}
+
+.img-container {
+  width: 50%;
+  height: 25rem;
+  position: relative;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.blog-container {
+  width: 40%;
+}
+
+.blog-container p {
+  margin: 1.5rem 0rem;
+  font-size: 12px;
+}
+
+.button-container {
+  margin-top: 8.5rem;
+  display: flex;
+}
+
+.read-btn {
+  color: var(--darkgray-text);
+  background: var(--bluemain);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.read-btn i {
+  margin-left: 1rem;
+}
+
+.read-btn:hover {
+  color: white;
+}
+
+.info-container {
+  background: var(--bluemain);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  height: 4rem;
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  z-index: 5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  padding: 1rem;
+}
+
+info p {
+  font-size: 1.6rem;
+  color: var(--darkgray-text);
+}
+
+.info i {
+  font-size: 1.6rem;
+  color: var(--darkgray-text);
+  padding-right: 0.4rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
 }

@@ -40,7 +40,7 @@ async function makeApiCall() {
         <p>April 26, 2021</p>
         </div>
         <div class="info comment">
-        <p>3 Comments</p>
+        <p>0 Comments</p>
         </div>
         </div>
         <h4>${posts.title.rendered}</h4>
