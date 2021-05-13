@@ -222,17 +222,11 @@ header {
   background-repeat: no-repeat;
   background-position-y: -40rem;
   background-position: center;
-  background-position-y: -40rem;
   background-attachment: fixed;
   color: white;
 }
 
 /* Recent post */
-
-main {
-  min-height: 70vh;
-  position: relative;
-}
 
 .recent {
   margin: auto;
@@ -250,30 +244,33 @@ hr {
 }
 
 .container {
-  background: red;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .carousel-container {
-  width: 80%;
-  height: 50rem;
-  margin: 4rem auto;
   display: flex;
-  position: relative;
-  background: black;
-  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  min-height: 50vh;
+  margin: 6rem auto;
+  display: flex;
 }
 
 .img-container {
   height: 35rem;
-  width: 55rem;
-  margin: 3rem 1rem;
+  width: 45rem;
+  position: relative;
+  margin: 2.5rem 1rem 10rem;
 }
 
 .img-container img {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -281,12 +278,13 @@ hr {
 
 .info-container {
   background: var(--bluemain);
-  border-radius: 4rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
   height: 4rem;
-  width: 35rem;
-  z-index: 5;
+  width: 100%;
+  position: absolute;
   bottom: -20px;
-  left: 5.5%;
+  z-index: 5;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -311,18 +309,20 @@ info p {
 #prev-btn {
   font-size: 4rem;
   position: absolute;
-  top: 45%;
-  left: 100px;
+  top: 40%;
+  left: 125px;
   color: var(--darkgray-text);
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 #next-btn {
   font-size: 4rem;
   position: absolute;
-  right: 100px;
-  top: 45%;
+  cursor: pointer;
+  right: 125px;
+  top: 40%;
   color: var(--darkgray-text);
   background: none;
   border: none;
@@ -425,7 +425,7 @@ footer {
 
 @media screen and (max-width: 1600px) {
   .nav {
-    min-height: 45vh;
+    min-height: 55vh;
     padding: 0rem 0rem;
   }
 
@@ -504,5 +504,29 @@ footer {
 @media screen and (max-width: 750px) {
   .footer-container {
     flex-direction: column;
+  }
+}
+
+/* Coursel / main section */
+
+@media screen and (max-width: 1400px) {
+  .carousel-container {
+    flex-direction: column;
+    min-height: 170vh;
+  }
+
+  #next-btn {
+    top: 95%;
+    right: 49%;
+  }
+  #prev-btn {
+    top: 2%;
+    left: 49%;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .img-container {
+    width: 35rem;
   }
 }

@@ -22,10 +22,14 @@ async function makeApiCall() {
       nextBtn.style.display = "block";
     }
 
+    console.log(json);
+
+    postContainer.innerHTML = "";
+
     json.forEach((posts) => {
       postContainer.innerHTML += `
         <div class="img-container">
-        <img src="${posts.source_url}" alt="">
+        <img src="${posts.source_url}" alt="${posts.alt_text}">
         <div class="info-container">
         <div class="info posted">
         <i class="fas fa-user-alt"></i>
