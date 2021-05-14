@@ -10,6 +10,8 @@
   --gray-text: #61636a;
   --darkgray-text: #484c50;
   --bluemain: #a0c2e3;
+  --footer: #232323;
+  --footer-light: #9c9c9c;
 }
 
 a {
@@ -19,6 +21,7 @@ a {
 html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -29,10 +32,32 @@ h1 {
 }
 
 h2 {
-  font-size: 2.4rem;
-  letter-spacing: 0.1rem;
+  margin-top: 10rem;
+  font-size: 6.4rem;
+  letter-spacing: 0.2rem;
   font-weight: 600;
+  text-align: center;
+}
+
+h3 {
+  font-size: 3.2rem;
   color: var(--darkgray-text);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+h4 {
+  text-align: center;
+  color: var(--darkgray-text);
+  margin-top: 4rem;
+  font-size: 2.4rem;
+}
+
+h5 {
+  font-size: 2.8rem;
+  color: white;
+  font-weight: 600;
+  text-align: center;
 }
 
 /* Navbar */
@@ -179,117 +204,106 @@ header {
   font-size: 2rem;
 }
 
-/* Blog page */
+/* Recent post */
 
-main {
-  min-height: 100vh;
+/* Footer */
+
+footer {
+  min-height: 35vh;
+  background: var(--footer);
 }
 
-/* Blog page */
-
-.container {
-  display: flex;
-  max-width: 70%;
-  margin: 6rem auto;
-  justify-content: space-around;
-}
-
-.img-container {
-  margin-top: 2rem;
-  width: 50%;
-  height: 25rem;
-  position: relative;
-}
-
-.img-container img {
+.footer-container {
+  max-width: 100%;
   height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-}
-
-.blog-container {
-  width: 40%;
-  height: 30rem;
-}
-
-.blog-container p {
-  margin-top: 1.5rem;
-  font-size: 12px;
-}
-
-.button-container {
-  margin: 2rem 0rem;
   display: flex;
-}
-
-.read-btn {
-  color: var(--darkgray-text);
-  background: var(--bluemain);
-  padding: 10px 30px;
-  border: none;
-  border-radius: 2rem;
-  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  transition: 0.3s;
-  cursor: pointer;
+  overflow: hidden;
 }
 
-.read-btn i {
-  margin-left: 1rem;
-}
-
-.read-btn:hover {
-  color: white;
-}
-
-.info-container {
-  background: var(--bluemain);
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  height: 4rem;
-  width: 100%;
-  position: absolute;
-  bottom: -40px;
-  z-index: 5;
+.input {
   display: flex;
+}
+
+.emailinput {
+  padding: 6px 20px;
+  border: none;
+}
+
+.email-btn {
+  padding: 1rem;
+  background-color: var(--bluemain);
+  border: none;
+}
+
+.email-btn i {
+  color: var(--darkgray-text);
+  font-size: 1.4rem;
+}
+
+.news,
+.footer-social,
+.arrow {
+  width: 40rem;
+  height: 20rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
-.info {
-  display: flex;
-  padding: 1rem;
+.footertxt {
+  color: var(--footer-light);
+  font-size: 1.8rem;
 }
 
-info p {
-  font-size: 1.6rem;
-  color: var(--darkgray-text);
+.footer-social i {
+  font-size: 2.4rem;
+  padding-right: 1.5rem;
+  color: white;
+  transition: 0.2s;
 }
 
-.info i {
-  font-size: 1.6rem;
-  color: var(--darkgray-text);
-  padding-right: 0.4rem;
+.footer-social i:hover {
+  color: #4267b2;
 }
 
-.btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem 0;
+.arrow i {
+  color: white;
+  font-size: 4.2rem;
+}
+
+.arrow i:hover {
+  color: var(--bluemain);
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-name: arrow-animation;
+}
+
+@keyframes arrow-animation {
+  0% {
+    margin-bottom: 0rem;
+  }
+  100% {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.copy {
+  color: var(--footer-light);
+  text-align: center;
+  margin-top: 5rem;
 }
 
 /* MEDIA QUIRIES */
 
 /* NAV */
 
-@media screen and (max-width: 1578px) {
+@media screen and (max-width: 1600px) {
   .nav {
-    min-height: 45vh;
+    min-height: 55vh;
     padding: 0rem 0rem;
   }
 
@@ -357,19 +371,12 @@ info p {
   }
 }
 
-@media screen and (max-width: 1400px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
+/* BANNER */
 
-  .img-container {
-    min-width: 100%;
-  }
-  .blog-container {
-    margin: 6rem 0rem 0rem 1rem;
-    justify-content: center;
-    min-width: 100%;
-    height: auto;
+/* Footer */
+
+@media screen and (max-width: 750px) {
+  .footer-container {
+    flex-direction: column;
   }
 }
