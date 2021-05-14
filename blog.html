@@ -23,7 +23,7 @@
   <body>
     <header>
       <div class="logo-container">
-        <h1>Travezy</h1>
+        <h1 id="logo">Travezy</h1>
       </div>
 
       <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
@@ -65,44 +65,47 @@
     </header>
 
     <main>
+      <div class="title-container">
+      <h2>Viewing blogs</h2>
+      <hr>
+      </div>
+      
       <div class="big-container">
-        <!-- <div class="container">
-          <div class="img-container">
-            <img src="./img/mountain.jpg" alt="" />
-            <div class="info-container">
-              <div class="info posted">
-                <i class="fas fa-user-alt"></i>
-                <p>Admin</p>
-              </div>
-              <div class="info date">
-                <i class="fas fa-calendar-alt"></i>
-                <p>April 26, 2021</p>
-              </div>
-              <div class="info comment">
-                <p>0 Comments</p>
-              </div>
-            </div>
-          </div>
-          <div class="blog-container">
-            <h2>Unforgettable adventure across the world</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quaerat officiis cumque aspernatur unde
-              debitis enim eveniet placeat tempora. Harum dolore, recusandae odio culpa nobis ullam minus necessitatibus
-              ab quae, quaerat doloremque ex sapiente eveniet ad, animi voluptatem quis aperiam! Placeat, perferendis
-              alias adipisci distinctio reprehenderit accusantium eos laborum ipsa est explicabo architecto at
-              voluptates in consectetur minima incidunt aspernatur.
-            </p>
-
-            <div class="button-container">
-              <a class="button read-btn" href="#">Continue reading <i class="fas fa-chevron-right"></i> </a>
-            </div>
-          </div>
-        </div> -->
+        <!-- API CONTENT -->
       </div>
       <div class="btn-container">
         <button class="read-btn v-btn">View more</button>
       </div>
     </main>
+
+     <footer>
+      <div class="footer-container">
+        <div class="news">
+          <h5>Sign up to our newletter</h5>
+          <p class="footertxt">Stay updated</p>
+          <div class="input">
+            <input class="emailinput" type="text" type="email" placeholder="Type email" />
+            <a class="email-btn" href="#"><i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-social">
+          <h5>Follow us</h5>
+          <p class="footertxt">On social media</p>
+          <div class="footer-icon">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="arrow">
+          <a href="#logo"><i class="fas fa-arrow-up"></i></a>
+        </div>
+      </div>
+
+      <p class="copy">&#169 Copyright 2021 All rights reserved | Made by Eirik Lilleby</p>
+    </footer>
     <script src="./js/blog.js"></script>
   </body>
 </html>

@@ -425,7 +425,7 @@ footer {
 
 @media screen and (max-width: 1600px) {
   .nav {
-    min-height: 55vh;
+    min-height: 50vh;
     padding: 0rem 0rem;
   }
 
@@ -472,6 +472,10 @@ footer {
     margin: 2rem 0rem;
   }
 
+  .social-container i {
+    display: none;
+  }
+
   .text-search {
     width: 18rem;
   }
@@ -493,13 +497,13 @@ footer {
   }
 }
 
+/* BANNER */
+
 @media screen and (max-width: 830px) {
   h2 {
     font-size: 3.2rem;
   }
 }
-
-/* BANNER */
 
 /* Footer */
 

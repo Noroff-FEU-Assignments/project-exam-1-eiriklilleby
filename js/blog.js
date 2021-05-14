@@ -12,7 +12,7 @@ async function makeApiCall() {
     postContainer.innerHTML = "";
     viewBtn.style.display = "block";
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 9; i++) {
       postContainer.innerHTML += `<div class="container">
           <div class="img-container">
             <img src="${json[i].source_url}" alt="${json[i].alt_text}" />
@@ -31,7 +31,7 @@ async function makeApiCall() {
             </div>
           </div>
           <div class="blog-container">
-            <h2>${json[i].title.rendered}</h2>
+            <h3>${json[i].title.rendered}</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quaerat officiis cumque aspernatur unde
               debitis enim eveniet placeat tempora. Harum dolore, recusandae odio culpa nobis ullam minus necessitatibus
@@ -40,7 +40,7 @@ async function makeApiCall() {
               voluptates in consectetur minima incidunt aspernatur.
             </p>
              <div class="button-container">
-              <a class="button read-btn" href="#">Continue reading <i class="fas fa-chevron-right"></i> </a>
+              <a class="button read-btn" href="blogspec.html?id=${json[i].id}">Continue reading <i class="fas fa-chevron-right"></i> </a>
             </div>
           </div>
         </div>`;
@@ -61,7 +61,8 @@ viewBtn.addEventListener("click", () => {
       for (let i = 0; i < json.length; i++) {
         viewBtn.style.display = "none";
 
-        postContainer.innerHTML += `<div class="container">
+        postContainer.innerHTML += `
+        <div class="container">
           <div class="img-container">
             <img src="${json[i].source_url}" alt="${json[i].alt_text}" />
             <div class="info-container">
@@ -79,7 +80,7 @@ viewBtn.addEventListener("click", () => {
             </div>
           </div>
           <div class="blog-container">
-            <h2>${json[i].title.rendered}</h2>
+            <h3>${json[i].title.rendered}</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quaerat officiis cumque aspernatur unde
               debitis enim eveniet placeat tempora. Harum dolore, recusandae odio culpa nobis ullam minus necessitatibus
@@ -88,7 +89,7 @@ viewBtn.addEventListener("click", () => {
               voluptates in consectetur minima incidunt aspernatur.
             </p>
              <div class="button-container">
-              <a class="button read-btn" href="#">Continue reading <i class="fas fa-chevron-right"></i> </a>
+              <a class="button read-btn" href="${json[i].id}">Continue reading <i class="fas fa-chevron-right"></i></a>
             </div>
           </div>
         </div>`;

@@ -32,25 +32,11 @@ h1 {
 }
 
 h2 {
-  margin-top: 10rem;
-  font-size: 6.4rem;
+  font-size: 4.2rem;
   letter-spacing: 0.2rem;
   font-weight: 600;
-  text-align: center;
-}
-
-h3 {
-  font-size: 3.2rem;
   color: var(--darkgray-text);
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
-h4 {
   text-align: center;
-  color: var(--darkgray-text);
-  margin-top: 4rem;
-  font-size: 2.4rem;
 }
 
 h5 {
@@ -204,7 +190,97 @@ header {
   font-size: 2rem;
 }
 
-/* Recent post */
+/* Main section */
+
+main {
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-container {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 5rem auto;
+}
+
+.back-container {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-container i {
+  font-size: 3.2rem;
+  color: var(--darkgray-text);
+}
+
+.back-container:hover {
+  background: var(--bluemain);
+}
+
+.info-container {
+  background: var(--bluemain);
+  margin: 2rem 0;
+  border-radius: 2rem;
+  height: 4rem;
+  width: 100%;
+  z-index: 5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info p {
+  font-size: 1.2rem;
+  color: var(--darkgray-text);
+}
+
+.info i {
+  font-size: 1.6rem;
+  color: var(--darkgray-text);
+  padding-right: 0.4rem;
+}
+
+.info {
+  display: flex;
+}
+
+.img-container {
+  width: 70%;
+  height: 45rem;
+  margin-bottom: 2rem;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.text-container {
+  width: 70%;
+}
+
+.text-container p {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: var(--darkgray-text);
+}
+
+.btn-txt {
+  margin-bottom: 10rem;
+}
 
 /* Footer */
 
@@ -303,7 +379,7 @@ footer {
 
 @media screen and (max-width: 1600px) {
   .nav {
-    min-height: 55vh;
+    min-height: 50vh;
     padding: 0rem 0rem;
   }
 
@@ -336,6 +412,10 @@ footer {
 
   .social-container {
     margin: auto;
+  }
+
+  .social-container i {
+    display: none;
   }
 
   .search-container {
@@ -371,7 +451,19 @@ footer {
   }
 }
 
-/* BANNER */
+/* MAIN CONTENCT */
+
+@media screen and (max-width: 685px) {
+  h2 {
+    font-size: 3.2rem;
+  }
+  .title-container {
+    width: 70%;
+  }
+  .info p {
+    font-size: 1rem;
+  }
+}
 
 /* Footer */
 
