@@ -89,7 +89,7 @@ viewBtn.addEventListener("click", () => {
               voluptates in consectetur minima incidunt aspernatur.
             </p>
              <div class="button-container">
-              <a class="button read-btn" href="${json[i].id}">Continue reading <i class="fas fa-chevron-right"></i></a>
+              <a class="button read-btn" href="blogspec.html?id=${json[i].id}">Continue reading <i class="fas fa-chevron-right"></i></a>
             </div>
           </div>
         </div>`;
