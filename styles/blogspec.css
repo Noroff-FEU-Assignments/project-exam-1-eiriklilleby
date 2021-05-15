@@ -301,6 +301,7 @@ main {
   left: 50%;
   transform: translate(-50%, -50%) scale(0.5);
   transition: all 0.25s ease-out;
+  object-fit: cover;
 }
 
 .max-img.open {
@@ -506,9 +507,9 @@ footer {
 
 /* MAX IMAGE */
 
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 1200px) {
   .max-img {
-    width: 70%;
+    width: 90%;
     height: 50%;
   }
 }
