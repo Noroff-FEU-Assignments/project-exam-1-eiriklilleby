@@ -29,7 +29,9 @@ async function makeApiCall() {
     json.forEach((posts) => {
       postContainer.innerHTML += `
         <div class="img-container">
+        <a href="blogspec.html?id=${posts.id}">
         <img src="${posts.source_url}" alt="${posts.alt_text}">
+        </a>
         <div class="info-container">
         <div class="info posted">
         <i class="fas fa-user-alt"></i>
@@ -43,7 +45,9 @@ async function makeApiCall() {
         <p>0 Comments</p>
         </div>
         </div>
+        <a href="blogspec.html?id=${posts.id}">
         <h4>${posts.title.rendered}</h4>
+        </a>
         </div>`;
     });
   } catch (error) {
