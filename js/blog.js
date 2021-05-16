@@ -46,6 +46,7 @@ async function makeApiCall() {
         </div>`;
     }
   } catch (error) {
+    postContainer.innerHTML = displayError();
     console.log(error);
   }
 }
@@ -95,6 +96,7 @@ viewBtn.addEventListener("click", () => {
         </div>`;
       }
     } catch (error) {
+      postContainer.innerHTML = displayError();
       console.log(error);
     }
   }

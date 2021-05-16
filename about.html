@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/blogspec.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
     <!-- Font from Google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -18,7 +18,7 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
-    <title>Travezy | Home</title>
+    <title>Travezy | About</title>
   </head>
   <body>
     <header>
@@ -34,13 +34,13 @@
           <div class="menu">
             <ul class="menu-items">
               <li class="menu-link">
-                <a class="target" href="index.html">Home</a>
+                <a href="index.html">Home</a>
               </li>
               <li class="menu-link">
                 <a href="blog.html">Blog</a>
               </li>
               <li class="menu-link">
-                <a href="about.html">About</a>
+                <a class="target" href="about.html">About</a>
               </li>
               <li class="menu-link">
                 <a href="contact.html">Contact</a>
@@ -65,17 +65,25 @@
     </header>
 
     <main>
-      <div class="small-container">
-        <a href="blog.html">
-          <div class="back-container">
-            <i class="fas fa-chevron-left"></i>
-          </div>
-        </a>
+      <div class="title-container">
+        <h2>About us</h2>
+        <hr />
       </div>
 
       <div class="container">
-        <!-- API CONTENT -->
-        <div class="loader"></div>
+        <div class="img-container">
+          <img src="./img/about.jpg" alt="" />
+        </div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ducimus et praesentium tenetur asperiores
+          dolor possimus, blanditiis deserunt, provident earum distinctio dignissimos dicta, officia facilis nemo.
+          Dolores doloribus assumenda tenetur, voluptatibus deleniti optio in earum itaque rem eum nesciunt. Unde, atque
+          sequi! Facere voluptas possimus tenetur, vero dicta autem, vitae harum nobis aspernatur pariatur debitis
+          veniam, explicabo laudantium aliquid eos?
+        </p>
+        <div class="btn-container">
+          <a class="contact-btn">Contact us</a>
+        </div>
       </div>
     </main>
 
@@ -108,7 +116,6 @@
       <p class="copy">Copyright 2021 All rights reserved | Made by Eirik Lilleby</p>
     </footer>
 
-    <script src="./js/message.js"></script>
-    <script src="./js/details.js"></script>
+    <script src="./js/contact.js"></script>
   </body>
 </html>

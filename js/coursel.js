@@ -51,7 +51,7 @@ async function makeApiCall() {
         </div>`;
     });
   } catch (error) {
-    // postContainer.innerHTML = displayError();
+    postContainer.innerHTML = displayError();
     console.log("An error has occured");
   }
 }

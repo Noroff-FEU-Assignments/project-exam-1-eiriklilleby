@@ -60,6 +60,7 @@ async function makeApiCall() {
 
     document.title = json.title.rendered;
   } catch (error) {
+    detailContainer.innerHTML = displayError();
     console.log(error);
   }
 }
