@@ -23,7 +23,7 @@
   <body>
     <header>
       <div class="logo-container">
-        <h1 id="logo">Travezy</h1>
+        <a href="index.html"><h1 id="logo">Travezy</h1></a>
       </div>
 
       <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
@@ -40,10 +40,10 @@
                 <a href="blog.html">Blog</a>
               </li>
               <li class="menu-link">
-                <a href="#">About</a>
+                <a href="about.html">About</a>
               </li>
               <li class="menu-link">
-                <a href="#">Contact</a>
+                <a href="blog.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -76,12 +76,16 @@
         <hr />
       </div>
 
+
+
+
         
 
       <div class="container">
         <button id="prev-btn"><i class="fas fa-chevron-left"></i></button>
         <button id="next-btn"><i class="fas fa-chevron-right"></i></button>
       <div class="carousel-container">
+        <div class="loader"></div>
         <!-- API content -->
       </div>
       </div>
@@ -115,7 +119,8 @@
 
       <p class="copy">&#169 Copyright 2021 All rights reserved | Made by Eirik Lilleby</p>
     </footer>
-
+    
+    <script src="./js/message.js"></script>
     <script src="./js/coursel.js"></script>
   </body>
 </html>
