@@ -13,7 +13,8 @@ async function makeApiCall() {
     viewBtn.style.display = "block";
 
     for (let i = 0; i < 9; i++) {
-      postContainer.innerHTML += `<div class="container">
+      postContainer.innerHTML += `
+      <div class="container">
           <div class="img-container">
             <img src="${json[i].source_url}" alt="${json[i].alt_text}" />
             <div class="info-container">
