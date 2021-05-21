@@ -225,6 +225,7 @@ hr {
 
 .container p {
   margin: 4rem auto;
+  color: var(--darkgray-text);
 }
 
 .img-container img {
