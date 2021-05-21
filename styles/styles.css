@@ -220,7 +220,6 @@ header {
   background-image: url(/img/mainbanner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-
   background-position: bottom;
   background-attachment: fixed;
   color: var(--footer);
@@ -528,6 +527,9 @@ footer {
 @media screen and (max-width: 830px) {
   h2 {
     font-size: 3.2rem;
+  }
+  .banner-container {
+    background-attachment: initial;
   }
 }
 

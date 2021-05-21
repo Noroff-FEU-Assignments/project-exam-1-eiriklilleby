@@ -1,10 +1,14 @@
 const form = document.querySelector(".formContainer");
+
 const firstName = document.querySelector("#firstName");
 const firstNameError = document.querySelector("#firstNameError");
+
 const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subjectError");
+
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
+
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 
@@ -34,11 +38,12 @@ function validateForm(event) {
   } else {
     messageError.style.display = "block";
   }
+
   if (
-    checkLength(firstName.value, 5) &&
+    checkLength(firstName.value, 4) &&
     validateEmail(email.value) &&
-    checkLength(subject.value, 15) &&
-    checkLength(message.value, 25)
+    checkLength(subject.value, 14) &&
+    checkLength(message.value, 24)
   ) {
     alert("Message has been sent successfully!");
   }
