@@ -379,6 +379,7 @@ footer {
   padding: 1rem;
   background-color: var(--bluemain);
   border: none;
+  cursor: pointer;
 }
 
 .email-btn i {
@@ -408,6 +409,7 @@ footer {
   padding-right: 1.5rem;
   color: white;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .footer-social i:hover {
