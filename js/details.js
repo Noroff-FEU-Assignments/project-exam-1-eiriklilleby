@@ -84,7 +84,7 @@ async function makeApiCall() {
       }
     });
 
-    document.title = json.title.rendered;
+    document.title = `Travezy | ${json.title.rendered}`;
   } catch (error) {
     detailContainer.innerHTML = displayError();
     console.log(error);
